@@ -14,8 +14,6 @@ Every time that someone walks into the restaurant – the first event – they w
 While the events take place, certain stats will be tracked. This includes the time people wait in the queue, how much money people spend, how long people wait for food, and how many people are served. These will be kept track of by adding to running totals, then dividing by the total number of people served to find averages. It is also possible that other stats could be thought of as we build the project, and these can be added later.
 
 **Class:**
-
-
 **Event**
 1. +int time //the time that the event will occur
 2. +int type:  //the type of event where 1=entering, 2=getting in line, 3=ordering food, 4=getting food, 5=sitting down, 6=leaving
@@ -36,4 +34,3 @@ While the events take place, certain stats will be tracked. This includes the ti
 17.-void doFood(vector<Group> &foodQueue,vector<Event> &list,int &customers)
 18.-Void doLeave(vector<Event> &list,int &customers)
 19.-Int orderTime()
-
