@@ -13,27 +13,27 @@ First, we will fill up the vector with random times that people come into the re
 Every time that someone walks into the restaurant – the first event – they will enter the line. After waiting some time, they will order food – event 2. Then they will leave the restaurant after some time.
 While the events take place, certain stats will be tracked. This includes the time people wait in the queue, how much money people spend, how long people wait for food, and how many people are served. These will be kept track of by adding to running totals, then dividing by the total number of people served to find averages. It is also possible that other stats could be thought of as we build the project, and these can be added later.
 
-Class:
+**Class:**
 
 
-Event
-•	int time //the time that the event will occur
-•	int type:  //the type of event where 1=entering, 2=getting in line, 3=ordering food, 4=getting food, 5=sitting down, 6=leaving
-•	Group group; //the group associated with the event happening
-•	 Event();
-•	Event(int time,int type)
-•	Void setEvent(int time,int type,Group group)
-•	Void setTime(int time)
-•	Void setType(int type)
-•	Void setGroup(Group group)
-•	Void setName(int name)
-•	Int getTime()
-•	Int getType()
-•	Group getGroup()
-•	void doEvent(vector<Group> queue, vector<Event> &list,int &queueTime,int &money,int &foodTime,int &customers)
-•	void doQueue(vector<Group> &queue,vector<Event> &list,int &customers)
-•	void doOrder(vector<Group> &queue,vector<Event> &list,int &money,int &queueTime)
-•	void doFood(vector<Group> &foodQueue,vector<Event> &list,int &customers)
-•	Void doLeave(vector<Event> &list,int &customers)
-•	Int orderTime()
+**Event**
+1. +int time //the time that the event will occur
+2. +int type:  //the type of event where 1=entering, 2=getting in line, 3=ordering food, 4=getting food, 5=sitting down, 6=leaving
+3. +Group group; //the group associated with the event happening
+4. -Event();
+5. -Event(int time,int type)
+6. -Void setEvent(int time,int type,Group group)
+7. -Void setTime(int time)
+8. -Void setType(int type)
+9. -Void setGroup(Group group)
+10.-Void setName(int name)
+11.-Int getTime()
+12.-Int getType()
+13.-Group getGroup()
+14.-void doEvent(vector<Group> queue, vector<Event> &list,int &queueTime,int &money,int &foodTime,int &customers)
+15.-void doQueue(vector<Group> &queue,vector<Event> &list,int &customers)
+16.-void doOrder(vector<Group> &queue,vector<Event> &list,int &money,int &queueTime)
+17.-void doFood(vector<Group> &foodQueue,vector<Event> &list,int &customers)
+18.-Void doLeave(vector<Event> &list,int &customers)
+19.-Int orderTime()
 
